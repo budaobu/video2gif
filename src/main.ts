@@ -1,5 +1,13 @@
-import { createApp } from 'vue'
-import './style.css'
+import { ViteSSG } from 'vite-ssg'
 import App from './App.vue'
+import Home from './pages/Home.vue'
+import './style.css'
 
-createApp(App).mount('#app')
+const routes = [
+  { path: '/', component: Home },
+]
+
+export const createApp = ViteSSG(
+  App,
+  { routes },
+)
