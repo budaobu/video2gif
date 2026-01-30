@@ -1,3 +1,37 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Nuxt outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Next.js outputs
+.next/
+out/
+build/
+
+# Deployment platforms
+.vercel
+.vercel/
+.netlify
+.wrangler
+.wrangler/
+.mf/
+
+# Environment files
+.env
+.env.*
+!.env.example
+.env.production
+.env.development
+.dev.vars
+
 # Logs
 logs
 *.log
@@ -7,18 +41,36 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Testing
+coverage/
+.nyc_output
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# IDE & Editors
+.vscode/
+.idea/
+.fleet
+*.swp
+*.swo
+*~
+
+# OS files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+desktop.ini
+.Spotlight-V100
+.Trashes
+
+# Package manager
+.yarn/
+.pnpm-store/
+
+# Temporary
+*.tmp
+.temp/
+tmp/
+
+# Misc
+.turbo
+tsconfig.tsbuildinfo
+vercel.json.local
+wrangler.toml.local
